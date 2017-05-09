@@ -9,11 +9,24 @@
         </style>
         <script>
             //scripts and such...
+            function init() {
+                var vast = document.getElementById('vast-selection');
+                var opt = document.createElement('option');
+                opt.innerHTML = "stuff?";
+                vast.appendChild(opt);
+            }
+
         </script>
     </head>
-    <body>
+    <body onload="init();">
         <div id="main-content">
             <p>Words and stuff....</p>
+            <form id="form1">
+                <label>Gets your Rocks Here!</label>
+                <select id="vast-selection">
+                    <option>Junk</option>
+                </select>
+
         </div>
     </body>
 </html>
